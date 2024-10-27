@@ -86,8 +86,4 @@ Section:NewButton("Make your script shorter", "Turn it into loadstring", functio
         toclipboard("https://youtu.be/t7UoL80Wl0A?si=DSstf78Bw-CVEk_K")
 end)
 
-Section:NewButton("Make your script shorter", "Turn it into loadstring", function()
-    setclipboard("https://youtu.be/t7UoL80Wl0A?si=DSstf78Bw-CVEk_K")
-        toclipboard("https://youtu.be/t7UoL80Wl0A?si=DSstf78Bw-CVEk_K")
-end)
 
