@@ -1,0 +1,89 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("SlendyScript", "BloodTheme")
+
+
+local Tab = Window:NewTab("Main")
+
+local Section = Tab:NewSection("Slendy hub by Slendy")
+
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+ 
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.Arcade
+Toggle.Text = "Slendy"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
+ 
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
+
+
+Section:NewButton("Rspy", "Activate Rspy for mobile", function()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+end    
+end)
+
+Section:NewButton("AdminCommand", "Activate Infinite Yield", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section:NewButton("DarkDex no key", "Mobile support", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
+
+Section:NewButton("Executor", "Test script on other executor", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3"))()
+end)
+
+local Tab = Window:NewTab("Video Tut")
+
+Section:NewButton("RSPY TUT", "copy youtube video link", function()
+    setclipboard("https://youtu.be/PLnwUmbyZmc?si=omy8Qh_xsFG-znJ4")
+        toclipboard("https://youtu.be/PLnwUmbyZmc?si=omy8Qh_xsFG-znJ4")
+end)
+
+Section:NewButton("DARKDEX TUT", "copy youtube video link", function()
+    setclipboard("https://youtu.be/Z_RDc4nx9yo?si=CdM0-VkJ3OyaYjtE")
+        toclipboard("https://youtu.be/Z_RDc4nx9yo?si=CdM0-VkJ3OyaYjtE")
+end)
+
+Section:NewButton("DARKDEX TUT", "copy youtube video link", function()
+    setclipboard("https://youtu.be/Z_RDc4nx9yo?si=CdM0-VkJ3OyaYjtE")
+        toclipboard("https://youtu.be/Z_RDc4nx9yo?si=CdM0-VkJ3OyaYjtE")
+end)
+
+Section:NewLabel("MAKE YOUR OWN HUB")
+
+Section:NewButton("Orion library doc", "Where to make ur hub", function()
+    setclipboard("https://github.com/shlexware/Orion/blob/main/Documentation.md")
+        toclipboard("https://github.com/shlexware/Orion/blob/main/Documentation.md")
+end)
+
+Section:NewButton("OrionLib TUT", "copy youtube video link", function()
+    setclipboard("https://youtu.be/LlyyrgmY7dM?si=Zu6rMecUCWK7ojMg")
+        toclipboard("https://youtu.be/LlyyrgmY7dM?si=Zu6rMecUCWK7ojMg")
+end)
+
+Section:NewButton("Make your script shorter", "Turn it into loadstring", function()
+    setclipboard("https://youtu.be/t7UoL80Wl0A?si=DSstf78Bw-CVEk_K")
+        toclipboard("https://youtu.be/t7UoL80Wl0A?si=DSstf78Bw-CVEk_K")
+end)
+
