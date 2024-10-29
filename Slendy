@@ -51,6 +51,12 @@ Section:NewButton("Executor", "Test script on other executor", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3"))()
 end)
 
+
+Section:NewButton("UI design", "Dont use if ur newbies", function()
+    loadstring(game:HttpGet(('https://pastefy.app/EOgPqinS/raw'),true))()
+end)
+
+
 local Section = Tab:NewSection("YOUTUBE LINKS")
 
 Section:NewButton("RSPY TUT", "copy youtube video link", function()
